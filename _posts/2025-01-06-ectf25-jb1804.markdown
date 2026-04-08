@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "ECTF 2025 writeup - JB1804"
+date:   2025-02-05 12:00:00 +1200
+modified_date: 2026-04-08 23:50:00 +1200
+categories: writeup
+tags: ctf writeup ectf25
+---
+(copied from my [HackMD post](https://hackmd.io/J5BYC3_KTT2UDCvh50JEPA))
+## Task:
+{% highlight md %}
+What do you think about my music ?
+Flag format: ectf{xxx}
+Note : No space
+{% endhighlight %}
+
+## Solution: 
+The zip file contains an image of sheet music. Researching something along the lines of "1804 music cipher" gives us Johann Bücking's music cipher (hence the initials in the challenge name). The first bar and last 2 bars are not part of the encrypted text, the remaining section gives us "steganomousiqueissuperswag"
+
+## Flag: 
+`ectf{steganomousiqueissuperswag}`
+
+## Resources:
+[https://legacy.wmich.edu/mus-theo/ciphers/bucking.html](https://legacy.wmich.edu/mus-theo/ciphers/bucking.html)
